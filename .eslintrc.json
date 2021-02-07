@@ -14,6 +14,13 @@
   "plugins": ["react"],
   "rules": {
     "no-unused-vars": "warn",
-    "react/jsx-indent": "warn"
+    "react/jsx-indent": "warn",
+    "quotes": "warn",
+    "semi": "warn",
+    "arrow-body-style": "warn",
+    "eol-last": "warn",
+    "comma-dangle": "warn",
+    "no-multiple-empty-lines": "warn",
+    "react/prop-types": "off"
   }
 }

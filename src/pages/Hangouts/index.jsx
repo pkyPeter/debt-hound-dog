@@ -1,5 +1,6 @@
 import React from 'react';
+import Page from '../../components/Page';
 
-const Hangouts = () => <div>Hang Outs</div>;
+const Hangouts = () => <Page title="聚會清單">Hang Outs</Page>;
 
 export default Hangouts;

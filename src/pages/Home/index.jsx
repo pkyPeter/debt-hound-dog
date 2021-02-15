@@ -1,5 +1,6 @@
 import React from 'react';
+import Page from '../../components/Page';
 
-const Home = () => <div>Hang Outs</div>;
+const Home = () => <Page>Home</Page>;
 
 export default Home;

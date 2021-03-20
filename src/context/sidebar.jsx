@@ -1,6 +1,6 @@
 import React, {
   createContext, useState, useCallback, useMemo, useEffect,
-} from 'react';
+} from "react";
 
 const SidebarContext = createContext({
   isOpen: true,
@@ -18,8 +18,8 @@ const SidebarProvider = ({ children }) => {
       if (innerWidth < 768) setIsOpen(false);
       else setIsOpen(true);
     };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const toggleOpen = useCallback(() => setIsOpen((prev) => !prev), []);

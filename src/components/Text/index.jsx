@@ -1,20 +1,27 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
 
 const resetMargin = css`
   margin-block-start: 0;
   margin-block-end: 0;
 `;
-const Title = styled.h1`
-  color: ${({ theme }) => theme.colors.BLACK_200};
-  font-size: 1.5rem;
+
+const H1 = styled.h1`
+  color: ${({ theme }) => theme.colors.BLACK_100};
+  font-size: 2rem;
   ${resetMargin};
 `;
 
-const SubTitle = styled.h1`
-  color: ${({ theme }) => theme.colors.BLACK_200};
-  font-size: 1.25rem;
+const H2 = styled.h1`
+  color: ${({ theme }) => theme.colors.BLACK_100};
+  font-size: 1.74rem;
+  font-weight: 500;
   ${resetMargin};
 `;
 
-export default { Title, SubTitle };
+const H6 = styled.h6`
+  color: ${({ theme }) => theme.colors.BLACK_100};
+  font-size: 1rem;
+`;
+
+export default { H1, H2, H6 };

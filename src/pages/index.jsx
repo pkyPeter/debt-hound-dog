@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import styled from '@emotion/styled';
-import { SidebarContext } from '../context/sidebar';
-import Home from './Home';
-import Hangouts from './Hangouts';
-import Debtors from './Debtors';
-import Sidebar from '../components/Sidebar';
-import MainPage from '../components/MainPage';
+import React, { useContext } from "react";
+import { Route, Switch } from "react-router-dom";
+import styled from "@emotion/styled";
+import { SidebarContext } from "../context/sidebar";
+import Home from "./Home";
+import Hangouts from "./Hangouts";
+import Debtors from "./Debtors";
+import Sidebar from "../components/Sidebar";
+import MainPage from "../components/MainPage";
 
 const Routes = () => (
   <Switch>

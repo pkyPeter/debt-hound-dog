@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import Header from './Header';
+import React from "react";
+import styled from "@emotion/styled";
+import Header from "./Header";
 
 const PageWrapper = styled.main`
   position: relative;
@@ -10,8 +10,8 @@ const PageWrapper = styled.main`
 `;
 
 const Content = styled.div`
-  padding: ${({ withTitle }) => `${withTitle ? '5.35rem' : '1.5rem'} 1.5rem 1.5rem`};
-  background-color: ${({ theme }) => theme.colors.BLACK_100};
+  padding: ${({ withTitle }) => `${withTitle ? "0rem" : "1.75rem"} 1.75rem 1.75rem`};
+  background-color: ${({ theme }) => theme.colors.BLACK_300};
   height: 100%;
   overflow-y: scroll;
 `;

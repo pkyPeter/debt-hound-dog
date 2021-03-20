@@ -11,11 +11,11 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@emotion"],
   "rules": {
     "no-unused-vars": "warn",
     "react/jsx-indent": "warn",
-    "quotes": "warn",
+    "quotes": ["warn", "double"],
     "semi": "warn",
     "arrow-body-style": "warn",
     "eol-last": "warn",

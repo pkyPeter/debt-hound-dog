@@ -2,18 +2,17 @@ import React from "react";
 import styled from "@emotion/styled";
 import Text from "../Text";
 
-const HeaderWrapper = styled.header`
-  width: 100%;
+const BreadcrumbsWrapper = styled.header`
   display: flex;
   align-items: center;
   padding: 1.75rem 1.5rem 1.3125rem;
   background-color: ${({ theme }) => theme.colors.BLACK_300};
 `;
 
-const Header = ({ title }) => (
-  <HeaderWrapper>
-    <Text.H2>{title}</Text.H2>
-  </HeaderWrapper>
+const Breadcrumbs = ({ breadCrumbs }) => (
+  <BreadcrumbsWrapper>
+    {breadCrumbs.map(({ text, href, isActive }) => <Text.H6>{text}</Text.H6>)}
+  </BreadcrumbsWrapper>
 );
 
-export default Header;
+export default Breadcrumbs;

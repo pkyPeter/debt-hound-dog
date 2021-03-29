@@ -52,7 +52,7 @@ const SideMenuItem = styled.li`
   align-items: center;
   padding: 0 0.9375rem;
   min-height: 2.625rem;
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
 `;
 
 const ItemIcon = styled.div`
@@ -83,6 +83,7 @@ const StyledNavLink = styled(NavLink)`
   }
   &.nav-link--selected {
     > ${SideMenuItem} {
+      transition-duration: 0.3s;
       background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240.7));
       box-shadow: 0 0 10px 1px rgba(115 103 240 / 70%);
       border-radius: 4px;
